@@ -1,16 +1,19 @@
-import * as React from "react"
-import styledComponents from "styled-components"
+import * as React from 'react'
+import styled from 'styled-components'
 export const Header: React.FC = () => {
-
-    return(
-        <StyledHeader>
-            hello
-        </StyledHeader>
-    )
-
+  return (
+    <StyledHeader>
+      <StyledHeading>Typescript</StyledHeading>
+    </StyledHeader>
+  )
 }
 
-const StyledHeader = styledComponents.div`
-    padding: 10px;
-    border: 10px solid black;
+const StyledHeader = styled.div`
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid grey;
+  background: lightblue;
+`
+const StyledHeading = styled.h1`
+  color: white;
 `
