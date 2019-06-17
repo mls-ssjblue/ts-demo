@@ -9,14 +9,15 @@ interface TopicCardProps {
   onClick: () => void
 }
 export const TopicCard = (props: TopicCardProps) => {
+  const Styled = props.isCode ? StyledCode : StyledDescription
   return (
     <>
-      <StyledDescription data-aos={props.animation}>
+      <Styled data-aos={props.animation} onClick={() => props.onClick()}>
         <H3>{props.title}</H3>
         <p>
           <props.description />
         </p>
-      </StyledDescription>
+      </Styled>
     </>
   )
 }
