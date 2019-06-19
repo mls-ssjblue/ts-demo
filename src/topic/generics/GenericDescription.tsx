@@ -8,6 +8,8 @@ export const GenericDescription = (props: CommonProps) => {
       <h3> Generics </h3>
 
       <StyledDiv>
+        A way to achieve more than could be using 'any'<br/>
+        Used to capture the type of the argument
         <ul>
           <li>Generic Types</li>
           <li>Generic Classes</li>

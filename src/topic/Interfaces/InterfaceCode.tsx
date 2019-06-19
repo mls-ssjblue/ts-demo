@@ -21,6 +21,11 @@ export const InterfaceCode = (props: CommonProps) => {
   }
 
   let mySquare = createSquare({color: 'black'});
+  
+  interface Point {
+    readonly x: number;
+    readonly y: number;
+}
   `
   return (
     <StyledCode data-aos={props.animation}>

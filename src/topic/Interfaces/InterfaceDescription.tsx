@@ -8,11 +8,16 @@ export const InterfaceDescription = (props: CommonProps) => {
       <h3> Interfaces </h3>
 
       <StyledDiv>
-        One of TypeScript’s core principles is that type checking focuses on the
-        shape that values have. This is sometimes called “duck typing” or
+        'One of TypeScript’s core principles is that type checking focuses on
+        the shape that values have. This is sometimes called “duck typing” or
         “structural subtyping”. In TypeScript, interfaces fill the role of
         naming these types, and are a powerful way of defining contracts within
-        your code as well as contracts with code outside of your project.
+        your code as well as contracts with code outside of your project.'{' '}
+        <br />
+        <br />
+        - Readonly Properties: Only modifiable when an object is first created.
+        <br />
+        (readonly applies to properties while const - variables)
       </StyledDiv>
     </StyledDescription>
   )
