@@ -1,52 +1,33 @@
+import { JSXElement } from '@babel/types'
 import * as React from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
+import { CommonProps } from './commonStyles'
 
 interface TopicCardProps {
-  title: string
-  description: React.FC
+  descriptionComponent: (props: any) => React.ReactElement<any>
+  codeComponent: (props: CommonProps) => React.ReactElement<any>
   animation: string
-  isCode: boolean
-  onClick: () => void
 }
+
 export const TopicCard = (props: TopicCardProps) => {
-  const Styled = props.isCode ? StyledCode : StyledDescription
+  const [isCode, setIsCode] = useState(false)
+  const Component = isCode ? props.codeComponent : props.descriptionComponent
+
+  function flip() {
+    setIsCode(!isCode)
+  }
+
   return (
-    <>
-      <Styled data-aos={props.animation} onClick={() => props.onClick()}>
-        <H3>{props.title}</H3>
-        <p>
-          <props.description />
-        </p>
-      </Styled>
-    </>
+    <StyledTopicCard onClick={() => flip()}>
+      <Component animation={props.animation} />
+    </StyledTopicCard>
   )
 }
 
-const H3 = styled.h3`
-  font-family: 'Alegreya Sans SC';
-  font-size: 3rem;
-  color: white;
-  letter-spacing: 3px;
-`
-
-const StyledP = styled.p`
-  max-width: 300px;
-`
-const StyledDescription = styled.div`
-  max-width: 1000px;
-  margin: 100px auto;
-  padding-top: 5px;
-  background: lightgrey;
-  text-align: center;
-  color: black;
-  font-size: 1.5em;
-`
-const StyledCode = styled.div`
-  max-width: 1000px;
-  margin: 100px auto;
-  padding-top: 5px;
-  background: grey;
-  text-align: center;
-  color: black;
-  font-size: 1.5em;
+const StyledTopicCard = styled.div`
+  transition: transform 0.6s;
+  position: relative;
+  min-height: 600px;
+  margin-bottom: 250px;
 `

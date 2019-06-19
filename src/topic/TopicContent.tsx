@@ -7,26 +7,33 @@ import { TypeCode } from './types/TypeCode'
 import { TypeDescription } from './types/TypeDescriptions'
 
 export const TopicContent = () => {
-  const [isCode, setIsCode] = useState(false)
   return (
     <>
       <TopicCard
-        title={!isCode ? 'Types' : 'Example'}
-        description={isCode ? TypeCode : TypeDescription}
-        animation="fade-left"
-        isCode={isCode}
-        onClick={() => setIsCode(!isCode)}
+        descriptionComponent={TypeDescription}
+        codeComponent={TypeCode}
+        animation="zoom-in"
       />
       <TopicCard
-        title={!isCode ? 'Interfaces' : 'Interface Example'}
-        description={isCode ? InterfaceCode : InterfaceDescription}
-        animation="fade-right"
-        isCode={isCode}
-        onClick={() => setIsCode(!isCode)}
+        descriptionComponent={InterfaceDescription}
+        codeComponent={InterfaceCode}
+        animation="slide-right"
       />
-      {/*<TopicCard title="Interface" description="a" animation="fade-right" />*/}
-      {/*<TopicCard title="Class" description="a" animation="fade-left" />*/}
-      {/*<TopicCard title="" description="a" animation="fade-right" />*/}
+      <TopicCard
+        descriptionComponent={TypeDescription}
+        codeComponent={TypeCode}
+        animation="flip-up"
+      />
+      <TopicCard
+        descriptionComponent={TypeDescription}
+        codeComponent={TypeCode}
+        animation="zoom-in"
+      />
+      <TopicCard
+        descriptionComponent={TypeDescription}
+        codeComponent={TypeCode}
+        animation="fade-left"
+      />
     </>
   )
 }

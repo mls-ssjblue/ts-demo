@@ -65,3 +65,9 @@
 li{
   text-align: left;
 }
+.flipped {
+  transform: rotateY(180deg);
+}
+.unflipped {
+  transform: rotateY(0deg);
+}
