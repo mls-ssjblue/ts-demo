@@ -8,11 +8,11 @@ export const FunctionsDescription = (props: CommonProps) => {
       <h3> Functions </h3>
 
       <StyledDiv>
-        <ul>
-          <li>Generic Types</li>
-          <li>Generic Classes</li>
-          <li>Generic Constraints</li>
-        </ul>
+        TS functions can be either named or anonymous like Javascript <br/>
+        - Contextual typing: Inferring types on one side <br/>
+        - Optional parameters using '?' <br/>
+        - Overloading functions: Based on parameters (optional/default)
+        a function can be overloaded with different implementations
       </StyledDiv>
     </StyledDescription>
   )
@@ -21,7 +21,8 @@ export const FunctionsDescription = (props: CommonProps) => {
 const StyledDiv = styled.div`
   margin: 20px;
   padding: 10px;
-  align: left;
+  text-align: left;
+  line-height:40px;
 `
 // const descriptions: string[] = [typeDescripion]
 

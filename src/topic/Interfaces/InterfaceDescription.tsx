@@ -22,6 +22,7 @@ const StyledDiv = styled.div`
   margin: 20px;
   padding: 10px;
   align: left;
+  line-height: 40px;
 `
 // const descriptions: string[] = [typeDescripion]
 

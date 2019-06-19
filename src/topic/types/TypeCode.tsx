@@ -6,8 +6,7 @@ export const TypeCode = (props: CommonProps) => {
   return (
     <StyledCode data-aos={props.animation}>
       <h3> Type examples</h3>
-      <StyledCodeBox>
-        <StyledPara>
+      <pre style={{ textAlign: 'left' }} className="line-numbers">
           let isDone: boolean = false;<br/>
           let decimal: number = 6; <br/>
           let hex: number= 0xf00d; <br/>
@@ -22,8 +21,7 @@ export const TypeCode = (props: CommonProps) => {
           let notSure:any = 4;<br/>
           notSure = "maybe a string instead";<br/>
           notSure = false<br/>
-        </StyledPara>
-      </StyledCodeBox>
+      </pre>
     </StyledCode>
   )
 }

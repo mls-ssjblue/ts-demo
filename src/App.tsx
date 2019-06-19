@@ -9,13 +9,14 @@ import { TopicContent } from './topic/TopicContent'
 
 const App: React.FC = () => {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+    })
   })
   return (
     <div className="App">
       <StyledContainer>
         <Header />
-        <TopicContent/>
+        <TopicContent />
       </StyledContainer>
     </div>
   )

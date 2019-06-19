@@ -26,20 +26,16 @@ export const TopicContent = () => {
         animation="slide-right"
       />
       <TopicCard
-        descriptionComponent={GenericDescription}
-        codeComponent={GenericCode}
-        animation="flip-up"
-      />
-      <TopicCard
         descriptionComponent={FunctionsDescription}
         codeComponent={FunctionsCode}
         animation="zoom-in"
       />
       <TopicCard
-        descriptionComponent={TypeDescription}
-        codeComponent={TypeCode}
-        animation="fade-left"
+        descriptionComponent={GenericDescription}
+        codeComponent={GenericCode}
+        animation="flip-up"
       />
+
     </>
   )
 }

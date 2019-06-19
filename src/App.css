@@ -32,10 +32,6 @@
   }
 }
 
-@font-face {
-  font-family: 'simplifica';
-  src: url('fonts/SIMPLIFICATypeface.ttf')
-}
 
 @keyframes typing {
   from { width: 0 }
