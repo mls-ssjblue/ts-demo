@@ -90,8 +90,8 @@ const StyledContainer = styled.div`
   margin-top: 100px;
   margin-left: 30%;
   position: relative;
-  width: 75%;
-  padding-bottom: 75%;
+  width: 50%;
+  padding-bottom: 40%;
 `
 const StyledCircle = styled.div`
   position: absolute;
@@ -110,10 +110,10 @@ const StyledSmallCircle = styled.div`
   margin-left: 15%;
   position: absolute;
   width: 70%;
-  height: 70%;
+  height: 60%;
   background-color: #47c5e5;
   border-radius: 50%;
-  font-size: 100px;
+  font-size: 50px;
   :hover {
     background-color: #5acfed;
   }
