@@ -29,7 +29,7 @@ export const TSIntro = () => {
     <>
       <StyledContainer>
         <StyledCircle>
-          <p style={{ fontSize: 20 }}>Types, Interfaces ... </p>
+          <p style={{ fontSize: 20 }}><i>Types, Interfaces ... </i></p>
           <StyledSmallCircle>
             <p>JS</p>
           </StyledSmallCircle>
@@ -44,21 +44,33 @@ export const TSIntro = () => {
           Types are one of the best forms of documentation you can have. The
           function signature is a theorem and the function body is the proof. TS
           provides compile time safety for JS code. <br />
-          Types can be implicit or explicit
+          Types can be implicit or explicit.
         </p>
         <h2> How does it work?</h2>
-        TS gets compiled to JS. The types are used by IDE and compiler to spot errors
-        and also does type inference. eg. if an array is passed to a function that expects
-        a string as a parameter: <i>error TS2345: Argument of type 'number[]' is not assignable to parameter of type 'string' </i>
+        TS gets compiled to JS. The types are used by IDE and compiler to spot
+        errors and also does type inference. eg. if an array is passed to a
+        function that expects a string as a parameter:{' '}
+        <i>
+          error TS2345: Argument of type 'number[]' is not assignable to
+          parameter of type 'string'{' '}
+        </i>
         <div style={{ display: 'inline' }}>
           <StyledCode>
-            <pre style={{ textAlign: 'left', lineHeight: '20px' }} className="line-numbers">
-              {tscode}<br/>
-              is converted to  ... <br/>
+            <pre
+              style={{ textAlign: 'left', lineHeight: '20px' }}
+              className="line-numbers"
+            >
+              {tscode}
+              <br />
+              is converted to ... <br />
               {jscode}
             </pre>
           </StyledCode>
         </div>
+        Source: &nbsp;
+        <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">
+          https://www.typescriptlang.org/docs/handbook/basic-types.html
+        </a>
       </StyledDiv>
     </>
   )
