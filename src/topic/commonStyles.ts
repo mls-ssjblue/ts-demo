@@ -14,17 +14,10 @@ export const StyledDescription = styled.div`
   color: black;
   font-size: 1.5em;
   min-height: 600px;
-  :before {
-    content: '';
-    position: absolute;
-    right: 100%;
-    top: 26px;
-    width: 0;
-    height: 0;
-    border-top: 13px solid transparent;
-    border-right: 26px solid #e1e8f4;
-    border-bottom: 13px solid transparent;
-  }
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+
 `
 
 export const StyledCode = styled.div`
@@ -40,16 +33,9 @@ export const StyledCode = styled.div`
   max-width: 1000px;
   min-height: 600px
   margin: 100px auto;
-    :before {
-    content: '';
-    position: absolute;
-    right: 100%;
-    top: 26px;
-    width: 0;
-    height: 0;
-    border-top: 13px solid transparent;
-    border-right: 26px solid #3d3d3d;
-    border-bottom: 13px solid transparent;
-  }
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  border-top-right-radius: 50% 20%;
+  
 
 `

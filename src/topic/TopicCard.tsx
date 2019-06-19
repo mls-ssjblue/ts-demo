@@ -30,4 +30,5 @@ const StyledTopicCard = styled.div`
   position: relative;
   min-height: 600px;
   margin-bottom: 250px;
+ 
 `
