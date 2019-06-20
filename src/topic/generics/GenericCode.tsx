@@ -26,6 +26,11 @@ export const GenericCode = (props: CommonProps) => {
         console.log(arg.length);  // Now we know it has a .length property, so no more error
         return arg;
     }
+    
+    interface Identities<V, W> {
+       id1: V,
+       id2: W
+    }
   `
   return (
     <StyledCode data-aos={props.animation}>
