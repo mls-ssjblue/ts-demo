@@ -43,8 +43,8 @@ export const TSIntro = () => {
           Types increase your agility when doing refactoring. It's better for
           the compiler to catch errors than to have things fail at runtime.
           <br />
-          Types are one of the best forms of documentation you can have.
-          TS provides compile time safety for JS code. <br />
+          Types are one of the best forms of documentation you can have. TS
+          provides compile time safety for JS code. <br />
           Types can be implicit or explicit.
         </p>
         <h2> How does it work?</h2>
@@ -98,8 +98,13 @@ const StyledCircle = styled.div`
   position: absolute;
   width: 50%;
   height: 60%;
- background: rgb(251,251,251);
-background: radial-gradient(circle, rgba(251,251,251,1) 0%, rgba(29,193,20,1) 47%, rgba(27,82,24,1) 100%);
+  background: rgb(251, 251, 251);
+  background: radial-gradient(
+    circle,
+    rgba(251, 251, 251, 1) 0%,
+    rgba(29, 193, 20, 1) 47%,
+    rgba(27, 82, 24, 1) 100%
+  );
 
   border-radius: 50%;
   font-size: 30px;
@@ -115,8 +120,13 @@ const StyledSmallCircle = styled.div`
   width: 70%;
   height: 60%;
   border-radius: 50%;
-  background: rgb(251,251,251);
-background: radial-gradient(circle, rgba(251,251,251,1) 0%, rgba(20,193,179,1) 47%, rgba(18,37,130,1) 100%);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 1%,
+    rgba(236, 250, 0, 1) 48%,
+    rgba(255, 179, 0, 1) 100%
+  );
   font-size: 50px;
   :hover {
     background-color: #5acfed;

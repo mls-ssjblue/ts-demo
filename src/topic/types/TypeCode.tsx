@@ -13,11 +13,17 @@ export const TypeCode = (props: CommonProps) => {
       let x: [string,number];
       // Initialize it
       x = ["hello", 10]; 
-      enum Color  Red, Green, Blue })
-      let c: Color = Color.Green;
+      
       let notSure:any = 4;
       notSure = "maybe a string instead";
       notSure = false
+      
+      // object
+      type PartialPointX = { x: number; };
+      type PartialPointY = { y: number; };
+      
+      // union
+      type PartialPoint = PartialPointX | PartialPointY;
       
       type Point = { 
         x: number;
