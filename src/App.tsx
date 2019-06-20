@@ -4,13 +4,11 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import './App.css'
 import { Header } from './header/Header'
-import { TopicCard } from './topic/TopicCard'
 import { TopicContent } from './topic/TopicContent'
 
 const App: React.FC = () => {
   useEffect(() => {
-    AOS.init({
-    })
+    AOS.init({})
   })
   return (
     <div className="App">

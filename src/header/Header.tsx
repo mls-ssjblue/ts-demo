@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Header: React.FC = () => {
   return (
     <StyledHeader>
-      <StyledHeading>TypeScript</StyledHeading>
+      <StyledHeading>TypeScript Intro</StyledHeading>
     </StyledHeader>
   )
 }
@@ -13,7 +13,7 @@ const StyledHeader = styled.div`
   background: #294e80;
 `
 const StyledHeading = styled.h1`
-  max-width: 400px;
+  max-width: 600px;
   color: white;
   font-family: 'Playfair Display', serif;
   font-size: 4rem;

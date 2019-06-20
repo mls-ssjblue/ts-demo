@@ -43,9 +43,8 @@ export const TSIntro = () => {
           Types increase your agility when doing refactoring. It's better for
           the compiler to catch errors than to have things fail at runtime.
           <br />
-          Types are one of the best forms of documentation you can have. The
-          function signature is a theorem and the function body is the proof. TS
-          provides compile time safety for JS code. <br />
+          Types are one of the best forms of documentation you can have.
+          TS provides compile time safety for JS code. <br />
           Types can be implicit or explicit.
         </p>
         <h2> How does it work?</h2>
