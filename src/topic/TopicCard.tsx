@@ -28,7 +28,6 @@ export const TopicCard = (props: TopicCardProps) => {
 const StyledTopicCard = styled.div`
   transition: transform 0.6s;
   position: relative;
-  min-height: 600px;
+  min-height: 700px;
   margin-bottom: 250px;
- 
 `

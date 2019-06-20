@@ -14,18 +14,18 @@ export const GenericCode = (props: CommonProps) => {
         add: (x: T, y: T) => T;
     }
 
-  let myGenericNumber = new GenericNumber<number>();
-  myGenericNumber.zeroValue = 0;
-  myGenericNumber.add = function(x, y) { return x + y; };
+    let myGenericNumber = new GenericNumber<number>();
+    myGenericNumber.zeroValue = 0;
+    myGenericNumber.add = function(x, y) { return x + y; };
+    
+    interface Lengthwise {
+        length: number;
+    }
   
-  interface Lengthwise {
-      length: number;
-  }
-  
-  function loggingIdentity<T extends Lengthwise>(arg: T): T {
-      console.log(arg.length);  // Now we know it has a .length property, so no more error
-      return arg;
-  }
+    function loggingIdentity<T extends Lengthwise>(arg: T): T {
+        console.log(arg.length);  // Now we know it has a .length property, so no more error
+        return arg;
+    }
   `
   return (
     <StyledCode data-aos={props.animation}>

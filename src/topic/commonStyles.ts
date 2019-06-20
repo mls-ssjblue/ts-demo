@@ -17,11 +17,11 @@ export const StyledDescription = styled.div`
   border-bottom-left-radius: 50% 20%;
   border-bottom-right-radius: 50% 20%;
   border-top-right-radius: 50% 20%;
-
 `
 
 export const StyledCode = styled.div`
   font-family: 'Source Code Pro', monospace;
+  line-height:25px;
   padding: 15px;
   font-size: 16px;
   color: #fff;

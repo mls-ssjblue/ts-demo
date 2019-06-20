@@ -1,26 +1,34 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { StyledCode, CommonProps } from '../commonStyles'
+import { CommonProps, StyledCode } from '../commonStyles'
 
 export const TypeCode = (props: CommonProps) => {
+  const code = `
+      let isDone: boolean = false;
+      let decimal: number = 6; 
+      let hex: number= 0xf00d; 
+      let color: string = "blue"; 
+      let list: number[] = [1, 2, 3]; 
+      let list: Array= [1, 2, 3]; 
+      let x: [string,number];
+      // Initialize it
+      x = ["hello", 10]; 
+      enum Color  Red, Green, Blue })
+      let c: Color = Color.Green;
+      let notSure:any = 4;
+      notSure = "maybe a string instead";
+      notSure = false
+      
+      type Point = { 
+        x: number;
+        y: number;
+      };
+  `
   return (
     <StyledCode data-aos={props.animation}>
       <h3> Type examples</h3>
       <pre style={{ textAlign: 'left' }} className="line-numbers">
-          let isDone: boolean = false;<br/>
-          let decimal: number = 6; <br/>
-          let hex: number= 0xf00d; <br/>
-          let color: string = "blue"; <br/>
-          let list: number[] = [1, 2, 3]; <br/>
-          let list: Array= [1, 2, 3]; // Declare a tuple type<br/>
-          let x: [string,number];<br/>
-          // Initialize it<br/>
-          x = ["hello", 10]; // OK<br/>
-          enum Color {'{'} Red, Green, Blue {'}'})<br/>
-          let c: Color = Color.Green;<br/>
-          let notSure:any = 4;<br/>
-          notSure = "maybe a string instead";<br/>
-          notSure = false<br/>
+        {code}
       </pre>
     </StyledCode>
   )
