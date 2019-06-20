@@ -13,9 +13,9 @@ const StyledHeader = styled.div`
   background: #294e80;
 `
 const StyledHeading = styled.h1`
-  max-width: 280px;
+  max-width: 400px;
   color: white;
-  font-family: simplifica;
+  font-family: 'Playfair Display', serif;
   font-size: 4rem;
   letter-spacing: 5px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
