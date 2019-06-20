@@ -29,7 +29,9 @@ export const TSIntro = () => {
     <>
       <StyledContainer>
         <StyledCircle>
-          <p style={{ fontSize: 20 }}><i>Types, Interfaces ... </i></p>
+          <p style={{ fontSize: 20 }}>
+            <i>Types, Interfaces ... </i>
+          </p>
           <StyledSmallCircle>
             <p>JS</p>
           </StyledSmallCircle>
@@ -96,8 +98,10 @@ const StyledContainer = styled.div`
 const StyledCircle = styled.div`
   position: absolute;
   width: 50%;
-  height: 50%;
-  background-color: #0998bc;
+  height: 60%;
+ background: rgb(251,251,251);
+background: radial-gradient(circle, rgba(251,251,251,1) 0%, rgba(29,193,20,1) 47%, rgba(27,82,24,1) 100%);
+
   border-radius: 50%;
   font-size: 30px;
   :hover {
@@ -111,8 +115,9 @@ const StyledSmallCircle = styled.div`
   position: absolute;
   width: 70%;
   height: 60%;
-  background-color: #47c5e5;
   border-radius: 50%;
+  background: rgb(251,251,251);
+background: radial-gradient(circle, rgba(251,251,251,1) 0%, rgba(20,193,179,1) 47%, rgba(18,37,130,1) 100%);
   font-size: 50px;
   :hover {
     background-color: #5acfed;
